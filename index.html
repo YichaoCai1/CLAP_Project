@@ -172,7 +172,7 @@
             <!-- Your image here -->
             <img src="static/images/generative_model.png" alt="MY ALT TEXT"/>
             <h3 class="subtitle has-text-centered">
-              Image and text data are generated through distinct deterministic processes derived from a unified latent space, with latent content and style variables. The latent content exclusively determines the sample label. <b>(a)</b> Soft interventions on the style variables result in altered styles, generating augmented images. <b>(b)</b> Due to the shared latent space, similar interventions on the style variables can also produce augmented text.
+              Image and text data, derived from a unified latent space with content and style variables, follow distinct deterministic processes. The sample label is determined solely by the latent content. (a) Soft interventions on style variables generate augmented images. (b) Similar interventions produce augmented text due to the shared latent space.
             </h3>
           </div>
         </div>
@@ -188,7 +188,7 @@
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Method Overview: Refining CLIP Features through Data Augmentation</h2>
+      <h2 class="title is-3">Refining CLIP via Isolating Content from Style with Data Augmentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
@@ -196,9 +196,26 @@
             <!-- Your image here -->
             <img src="static/images/method_overview.png" alt="MY ALT TEXT"/>
             <h3 class="subtitle has-text-centered">
-              Contrastive learning with data augmentation in one modality benefits both, with text data being more amendable for style changes due to its semantic structure.
+              Contrastive learning with data augmentation in one modality benefits both, with text data being more amendable for style changes due to its semantic structure. The trained adapting network can be seamlessly applied in both modality for zero-shot inference.
             </h3>
           </div>
+          
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/ImAug.png" alt="MY ALT TEXT"/>
+            <h3 class="subtitle has-text-centered">
+              Isolating content from style with image augmentation
+            </h3>
+          </div>
+          
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/CLAP.png" alt="MY ALT TEXT"/>
+            <h3 class="subtitle has-text-centered">
+              Isolating content from style with text augmentation
+            </h3>
+          </div>
+
         </div>
       </div>
     </div>
@@ -207,38 +224,38 @@
 <!-- Method Overview -->
 
 
-
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3">Experimental Results</h2>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/zero-shot_performance.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Zero-shot performance and resiliance against prompt perturbations.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/few-shot_performance.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Few-shot performance.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/adversarial_robustness.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+         Robustness against adversarial attacks.
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/images/t-sne_visualization.png" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        Qualitative analysis with t-SNE visualization on PACS dataset, Art Painting domain.
       </h2>
     </div>
   </div>
@@ -250,60 +267,58 @@
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
-    <div class="container">
+    <div class="container"> -->
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <!-- <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
-          <div class="publication-video">
+          <div class="publication-video"> -->
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
+          <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
             <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
+            <!-- <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
+          <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
             <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
+            <!-- <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
             <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
+            <!-- <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
-
-
 
 
 
@@ -327,7 +342,12 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{cai2023clap,
+        title={CLAP: Isolating Content from Style through Contrastive Learning with Augmented Prompts},
+        author={Cai, Yichao and Liu, Yuhang and Zhang, Zhen and Shi, Javen Qinfeng},
+        journal={arXiv preprint arXiv:2311.16445},
+        year={2023}
+      }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -340,7 +360,7 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
